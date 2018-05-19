@@ -1,0 +1,108 @@
+{
+    "datasource.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "C777F06B-202E-4480-B475-FA416154D458"
+        }
+    ],
+    "datasource.connections": [
+        {
+            "options": {
+                "server": "volcano.database.windows.net",
+                "database": "",
+                "authenticationType": "SqlLogin",
+                "user": "aloha",
+                "password": "",
+                "connectTimeout": 30,
+                "applicationName": "sqlops",
+                "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+                "databaseDisplayName": ""
+            },
+            "groupId": "C777F06B-202E-4480-B475-FA416154D458",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "6af59fde-0fb3-44ea-ba07-692e877c658f"
+        }
+    ],
+    "dashboard.database.widgets": [
+        {
+         "name": "slow queries widget",
+         "gridItemConfig": {
+             "sizex": 2,
+             "sizey": 1
+         },
+         "widget": {
+             "query-data-store-db-insight": null
+         }
+     },
+        {
+            "name": "Tasks",
+            "gridItemConfig": {
+                "sizex": 1,
+                "sizey": 1
+            },
+            "widget": {
+                "tasks-widget": [
+                    {
+                        "name": "backup",
+                        "when": "!mssql:iscloud"
+                    },
+                    {
+                        "name": "restore",
+                        "when": "!mssql:iscloud"
+                    },
+                    "configureDashboard",
+                    "newQuery"
+                ]
+            }
+        },
+        {
+         "name": "active Session",
+         "gridItemConfig": {
+             "sizex": 2,
+             "sizey": 1
+         },
+         "widget": {
+             "insights-widget": {
+                 "type": {
+                     "count": {
+                         "dataDirection":"vertical",
+                         "dataType": "number",
+                         "legendPosition": "none",
+                         "labelFirstColumn": false,
+                         "columnsAsLabels": false
+                     }
+                 },
+                 "queryFile": "C:/Users/aloha.ALOHA/Desktop/SQLOpsStudio/activeSession.sql"
+                 ,"details": {
+                     "queryFile": "C:/Users/aloha.ALOHA/Desktop/SQLOpsStudio/activeSessionDetail.sql",
+                     "label": "SID",
+                     "value": "Login Name"
+                 }
+                }
+         }
+     }
+ 
+        {
+         "name": "Space Used by Tables",
+         "gridItemConfig": {
+             "sizex": 2,
+             "sizey": 1
+         },
+         "widget": {
+             "table-space-db-insight": null
+         }
+     },
+        {
+            "gridItemConfig": {
+                "sizex": 1,
+                "sizey": 2
+            },
+            "widget": {
+                "explorer-widget": {}
+            }
+        }
+        
+    ],
+ 
+ }
