@@ -1,0 +1,1 @@
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/mihochannel/albums/72157693992899482" title="decode 2018"><img src="https://farm1.staticflickr.com/950/27422824807_2c53a2817c_z.jpg" width="640" height="360" alt="decode 2018"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
