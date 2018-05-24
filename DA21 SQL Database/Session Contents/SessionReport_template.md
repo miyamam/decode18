@@ -32,5 +32,4 @@ Azure Database Migration Service (DMS）オンプレからPaaSのサービスに
 DMSのサポートは SQL Server 2005-2017。SQL Server 2012 R2のEOAは来年なので移行方式のひとつの選択肢に。
 
 ### 全体
-SQL Database はいろいろ面白い進化をし続けていて興味深い。
-用途も多岐にわたるので今後も新しい利用を検討したい。
+SQL Database はいろいろ面白い進化をし続けていて興味深い。用途も多岐にわたるので今後も新しい利用を検討したい。
